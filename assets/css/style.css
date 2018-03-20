@@ -1,0 +1,320 @@
+/**
+ * Week 1 Homework (recommended assignment)
+ **/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./../images/dust_scratches.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 32px;
+    font-size: 18px;
+    color: #777777;
+}
+
+.container, .container2, .container3 {
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* index.html */
+/* header */
+
+.main-header {
+    border-bottom: 1.5px solid darkgrey;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 250px;
+    height: 90px;
+    line-height: 90px;
+    background-color: #4aaaa5;
+    text-align: center;
+}
+
+.name {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+nav li {
+    border-left: 1px solid #efefef;
+}
+
+nav a {
+    text-decoration: none;
+    color: #777777;
+    padding: 10px;
+}
+
+nav li:first-child {
+    border-left: none;
+}
+
+/* main content */
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    line-height: 45px;
+    text-align: left;
+}
+
+.main-section {
+    width: 100%;
+    max-width: 650px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+    width: 275px;
+    height: auto;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* sidebar */
+
+h2 {
+    text-align: center;
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 270px;
+    padding: 30px;
+    margin-top: 40px;
+    border: 1px solid #dddddd;
+    line-height: 20px;
+    height: 200px;
+}
+
+.social {
+    width: 65px;
+    height: 62px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* footer */
+
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    font-size: 12px;
+    border-top: 8px solid #4aaaa5;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+/* contact html */
+
+label, input[type=text], input[type=email], textarea {
+    width: 100%;
+    display: flex;
+}
+
+input[type=text], input[type=email], textarea {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+}
+
+.contact-form ul {
+    margin-bottom: 25px;
+}
+
+.contact-form li {
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    border: 0 none;
+    padding: 10px 25px;
+}
+
+/* portfolio html */
+
+.project-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project img {
+    width: 100%;
+    border: 0px none;
+}
+
+.project {
+    position: relative;
+    width: 275px;
+    margin-left: 5px;
+}
+
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    /* padding: 5px; */
+    bottom: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 980px) {
+    .container, .container2, .container3 {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+
+    .main-section {
+        max-width: 420px;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container, .container2, .container {
+        max-width: 640px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-section {
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .project-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        position: relative;
+        width: 50%;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100vw;
+        margin-left: -20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+    }
+}

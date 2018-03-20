@@ -1,2 +1,2 @@
-# jskim25.github.io
-My Personal Github Pages Site
+# Responsive-Portfolio
+Week 2 homework (Responsive)

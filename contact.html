@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
@@ -27,11 +27,25 @@
 
     <div class="container2">
         <section class="main-section">
-            <h1>About Me</h1>
-            <img src="./assets/images/me.jpg" class="image" alt="James Kim">
-            <p>Hello! My name is James. I am 28 years old and live in Chicago, Illinois. I currently work at Northwestern University as a financial coordinator in the Center for Clinical Research. I don't have any prior coding experience, but find it really interesting and am excited to learn more.</p>
-            <br>
-            <p>When I'm not too busy trying to get up to speed on the coding bootcamp, I like playing video games. Recently, I've also started reading books. I just finished <i>Slaughter House Five</i>, by Kurt Vonnegut Jr. Right now, I am finishing up <i>Never Let Me Go</i>, by Nobel Prize Winner, Kazuo Ishiguro. If you have any suggestions, I'd love to hear them on the contacts page (to come soon...?) </p>
+            <h1>Contact</h1>
+            <form class="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="Email">Email</label>
+                        <input type="email" id="email" name="name" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
+            </form>
+
         </section>
 
         <section class="sidebar">
@@ -51,4 +65,5 @@
     </footer>
 
 </body>
+
 </html>
