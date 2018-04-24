@@ -216,6 +216,8 @@ input[type=submit] {
     position: relative;
     width: 275px;
     margin-left: 5px;
+    height: 300px;
+    border: 1px solid black;
 }
 
 h3 {
